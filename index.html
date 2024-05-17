@@ -1,0 +1,293 @@
+<!--
+  ~
+  ~ ███╗░░██╗██╗░█████╗░░█████╗░
+  ~ ████╗░██║██║██╔══██╗██╔══██╗
+  ~ ██╔██╗██║██║██║░░╚═╝███████║
+  ~ ██║╚████║██║██║░░██╗██╔══██║
+  ~ ██║░╚███║██║╚█████╔╝██║░░██║
+  ~ ╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚═╝
+  ~
+  ~ Copyright (c) 2024. NiCa All rights reserved.
+  ~ @license GPLv3 for open source use only
+  ~ NiCa: https://www.liutao.love
+  ~ ────────█████─────────────█████
+  ~ ────████████████───────████████████
+  ~ ──████▓▓▓▓▓▓▓▓▓▓██───███▓▓▓▓▓▓▓▓▓████
+  ~ ─███▓▓▓▓▓▓▓▓▓▓▓▓▓██─██▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓▓▓──────────────────▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───████─█──█─█████─▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─█████─▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ─███▓▓▓▓▓─████─████─████─█████─▓▓▓▓███
+  ~ ───███▓▓▓▓▓──────────────────▓▓▓▓▓▓███
+  ~ ────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ───────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████
+  ~ ──────────████▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────────────███▓▓▓▓▓▓▓████
+  ~ ───────────────███▓▓▓███
+  ~ ─────────────────██▓██
+  ~ ──────────────────███
+  -->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>革命历史</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--动画-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--时间轴样式-->
+    <link rel="stylesheet" href="css/timeline.css">
+    <!--手风琴-->
+    <link rel="stylesheet" href="css/accordion.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--阿里矢量库-->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!--自定样式-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div id="loaded" class="loaded"></div>
+<!--菜单栏-->
+<nav class="navbar bg-transparent fixed-top">
+    <div class="container-fluid">
+        <!-- iconfont icon-menu text-white fs-2"-->
+        <div class="bg-transparent border-0 ms-auto " type="button"
+             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onclick="$('.menu-button').addClass('cross')">
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+                <div type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            革命历史
+                        </h2>
+                        <p class="content">
+                            Revolutionary history
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="index.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色记忆
+                        </h2>
+                        <p class="content">
+                            Red Memory
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="revolution.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色精神
+                        </h2>
+                        <p class="content">
+                            Red Spirit
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-spirit.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            战争事迹
+                        </h2>
+                        <p class="content">
+                            War deeds
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-print.html"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="home">
+    <div class="swiper fullpage">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class="prompt text-decoration-none iconfont icon-mouse">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="container animate__slower border-warning">
+                    <p class="title rectangle">革命历史<span>概述</span></p>
+                    <p style="text-indent:32px">
+                        中国近代史的时间为，从1840年鸦片战争到1949年中华人民共和国成立前夕，这是中国逐渐沦为半殖民地半封建社会的历史，也是中国人民追求国家独立和民族复兴的历史。中国近代史分为前后两个阶段，从1840年鸦片战争到1919年五四运动前夕，是旧民主主义革命阶段；从1919年五四运动到1949年中华人民共和国成立前夕，是新民主主义革命阶段。
+                    </p>
+                    <div class="swiper film">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <img class="swiper-slide" src="images/jj-1.png" alt="">
+                            <img class="swiper-slide" src="images/jj-2.png" alt="">
+                            <img class="swiper-slide" src="images/jj-3.png" alt="">
+                            <img class="swiper-slide" src="images/jj-4.png" alt="">
+                            <img class="swiper-slide" src="images/jj-1.png" alt="">
+                            <img class="swiper-slide" src="images/jj-2.png" alt="">
+                            <img class="swiper-slide" src="images/jj-3.png" alt="">
+                            <img class="swiper-slide" src="images/jj-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-click" href="revolution.html">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="container animate__slower">
+                    <p class="title iu">
+                        <img src="images/you.png"/>
+                        <span>长征</span>之路
+                        <img src="images/zuo.png"/>
+                    </p>
+                    <img src="images/cz-1.png" alt="" class="cz">
+                    <div class="cz-text">
+                        <div class="row">
+                            <div class="col">
+                                <figure class="figure text-center">
+                                    <img src="images/bogu.png" class="figure-img img-fluid rounded" alt="..."
+                                         style="width: 60%">
+                                    <figcaption class="figure-caption">博古</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col">
+                                <figure class="figure text-center">
+                                    <img src="images/lide.png" class="figure-img img-fluid rounded" alt=""
+                                         style="width: 60%">
+                                    <figcaption class="figure-caption">李德</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <h3>被迫的转移</h3>
+                        <p style="text-indent:32px">
+                            1934年10月，由于博古、李德等人[2-3]
+                            “左”倾教条主义的错误领导，第五次反“围剿”失败。中央革命根据地（亦称中央苏区）红军第一方面军（中央红军）主力开始长征，同时留下部分红军就地坚持游击战争。8月，中共中央和中革军委为了给中央红军战略转移探索道路，命令红六军团撤离湘赣苏区，到湘中发展游击战争。10月，红六军团与红三军（后恢复红二军团番号）会合，并创建了湘鄂川苏区[1]
+                            。 1934年10月上旬，中央红军主力各军团分别集结陆续出发，中共中央和红军总部及直属纵队离开江西瑞金。
+                        </p>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-click" href="https://baike.baidu.com/item/%E9%95%BF%E5%BE%81%E4%B9%8B%E8%B7%AF/19151950">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <div class="container animate__slower">
+                    <p class="title iu">
+                        <img src="images/you.png"/>
+                        相关<span>历史</span>
+                        <img src="images/zuo.png"/>
+                    </p>
+                    <p  style="text-indent:32px">
+                        1949年7月，全国政治协商会议筹备会为了迎接新中国的成立，在《人民日报》登出了向全国征求国旗、国徽及国歌词谱的启事，明确提出对国徽设计的要求是：1、要有中国特征；2、要有政权特征；3、形式要庄严富丽。
+                    </p>
+                    <div class="w-accor w-accor5 history">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="item clearfix">
+                                    <div class="img_ar">
+                                        <img src="images/guoqi.jpg"/>
+                                    </div>
+                                    <div class="cont_ar">
+                                        <div class="dec_ar">
+                                            <h3>国旗的发展历史</h3>
+                                            <div class="i_img iconfont icon-right-btn fs-1">
+
+                                            </div>
+                                            <div class="acr_p" style="text-indent:32px">
+                                                1949年4月，中国人民解放军，以摧枯拉朽之势，一举占领了国民党反动政府的巢穴――南京，挂在伪总统府上的“青天白日满地红”旗，落在了地下。同时，一个象征新中国主权和尊严的标志――国旗，已在党和革命人民的心底开始描绘。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%97%97/240342?fromModule=lemma_search-box"></a>
+                            </li>
+                            <li>
+                                <div class="item clearfix">
+                                    <div class="img_ar">
+                                        <img src="images/guohui.jpg"/>
+                                    </div>
+                                    <div class="cont_ar">
+                                        <div class="dec_ar">
+                                            <h3>国徽的发展历史</h3>
+                                            <div class="i_img iconfont icon-right-btn fs-1">
+
+                                            </div>
+                                            <div class="acr_p" style="text-indent:32px">
+                                                《国徽图案》是1950年6月28日中央人民政府委员会第八次会议通过的，内容包括国徽图案及对该图案的说明：“国徽的内容为国旗、天安门、齿轮和麦稻穗，象征中国人民自‘五四’运动以来的新民主主义革命斗争和工人阶级领导的以工农联盟为基础的人民民主专政的新中国的诞生。”
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://baike.baidu.com/item/%E5%9B%BD%E5%BE%BD/63243"></a>
+                            </li>
+                            <li>
+                                <div class="item clearfix">
+                                    <div class="img_ar">
+                                        <img src="images/ditu.jpg"/>
+                                    </div>
+                                    <div class="cont_ar">
+                                        <div class="dec_ar">
+                                            <h3>国歌的发展历史</h3>
+                                            <div class="i_img iconfont icon-right-btn fs-1">
+
+                                            </div>
+                                            <div class="acr_p" style="text-indent:32px">
+                                                1949年9月21日，中国人民政治协商会议第一届全体会议召开，由于没有如期拟定出国歌，会议于9月27日通过《关于中华人民共和国国都、纪年、国歌、国旗的决议》，规定在中华人民共和国的国歌未正式制定前，以《义勇军进行曲》为国歌。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://baike.baidu.com/item/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2/311080?fromtitle=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%9B%BD%E6%AD%8C&fromid=239880"></a>
+                            </li>
+                            <li>
+                                <div class="item clearfix">
+                                    <div class="img_ar">
+                                        <img src="images/dangzhang.jpg"/>
+                                    </div>
+                                    <div class="cont_ar">
+                                        <div class="dec_ar">
+                                            <h3>党徽的发展历史</h3>
+                                            <div class="i_img iconfont icon-right-btn fs-1">
+
+                                            </div>
+                                            <div class="acr_p" style="text-indent:32px">
+                                                中国共产党党徽为镰刀和锤头组成的图案，图案为金黄色。锤子、镰刀代表工人和农民的劳动工具，象征着中国共产党是中国工人阶级的先锋队，代表着工人阶级和广大人民群众的根本利益。黄色象征光明。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E5%85%9A%E5%BE%BD?fromModule=lemma_search-box"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-up">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/main.min.js"></script>
+<script src="js/accordion.min.js"></script>
+<script src="js/Loaders.min.js"></script>
+</body>
+</html>

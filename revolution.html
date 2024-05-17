@@ -1,0 +1,203 @@
+<!--
+  ~
+  ~ ███╗░░██╗██╗░█████╗░░█████╗░
+  ~ ████╗░██║██║██╔══██╗██╔══██╗
+  ~ ██╔██╗██║██║██║░░╚═╝███████║
+  ~ ██║╚████║██║██║░░██╗██╔══██║
+  ~ ██║░╚███║██║╚█████╔╝██║░░██║
+  ~ ╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚═╝
+  ~
+  ~ Copyright (c) 2024. NiCa All rights reserved.
+  ~ @license GPLv3 for open source use only
+  ~ NiCa: https://www.liutao.love
+  ~ ────────█████─────────────█████
+  ~ ────████████████───────████████████
+  ~ ──████▓▓▓▓▓▓▓▓▓▓██───███▓▓▓▓▓▓▓▓▓████
+  ~ ─███▓▓▓▓▓▓▓▓▓▓▓▓▓██─██▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓▓▓──────────────────▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───████─█──█─█████─▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─█████─▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ─███▓▓▓▓▓─████─████─████─█████─▓▓▓▓███
+  ~ ───███▓▓▓▓▓──────────────────▓▓▓▓▓▓███
+  ~ ────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ───────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████
+  ~ ──────────████▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────────────███▓▓▓▓▓▓▓████
+  ~ ───────────────███▓▓▓███
+  ~ ─────────────────██▓██
+  ~ ──────────────────███
+  -->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>红色记忆</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--动画-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--时间轴样式-->
+    <link rel="stylesheet" href="css/timeline.css">
+    <!--手风琴-->
+    <link rel="stylesheet" href="css/accordion.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--阿里矢量库-->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!--自定样式-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div id="loaded" class="loaded"></div>
+<!--菜单栏-->
+<nav class="navbar bg-transparent fixed-top">
+    <div class="container-fluid">
+        <!-- iconfont icon-menu text-white fs-2"-->
+        <div class="bg-transparent border-0 ms-auto " type="button"
+             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onclick="$('.menu-button').addClass('cross')">
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+                <div type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            革命历史
+                        </h2>
+                        <p class="content">
+                            Revolutionary history
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="index.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色记忆
+                        </h2>
+                        <p class="content">
+                            Red Memory
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="revolution.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色精神
+                        </h2>
+                        <p class="content">
+                            Red Spirit
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-spirit.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            战争事迹
+                        </h2>
+                        <p class="content">
+                            War deeds
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-print.html"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="revolution">
+    <div class="swiper timeline">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" data-time="1911">
+                <div class="card data" >
+                    <div class="card-body align-content-center">
+                        <h5 class="card-title">辛亥革命</h5>
+                        <p class="card-text">
+                            辛亥革命是指发生于中国农历辛亥年（清宣统三年），即公元1911年至1912年初，旨在推翻清朝专制帝制、建立共和政体的全国性革命。狭义的辛亥革命指自1911年10月10日（农历八月十九）夜武昌起义爆发，至1912年元旦孙中山就职中华民国临时大总统前后这一段时间中国所发生的革命事件。广义上辛亥革命指自十九世纪末（有的学者认为从1905年中国同盟会成立算起，有说从1894年兴中会成立开始）迄辛亥年成功推翻清朝统治在中国出现的连场革命运动。
+                        </p>
+                        <a href="https://baike.baidu.com/item/%E8%BE%9B%E4%BA%A5%E9%9D%A9%E5%91%BD/5560" class="btn btn-outline-light">MORE</a>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-mouse">
+                </a>
+            </div>
+            <div class="swiper-slide" data-time="1912">
+                <div class="card data" >
+                    <div class="card-body align-content-center">
+                        <h5 class="card-title">中华民国临时政府成立</h5>
+                        <p class="card-text">
+                            1911年12月29日，各省都督府代表联合会代表在南京召开中华民国临时大总统选举会，选举孙文为中华民国临时大总统。1912年1月1日，孙文在南京就任临时大总统。同年1月3日，各省都督府代表联合会代表在南京召开中华民国临时副总统选举会，选举黎元洪为中华民国临时副总统
+                        </p>
+                        <a href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E4%B8%B4%E6%97%B6%E6%94%BF%E5%BA%9C?fromModule=lemma_search-box" class="btn btn-outline-light">MORE</a>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-mouse">
+                </a>
+            </div>
+            <div class="swiper-slide" data-time="1915">
+                <div class="card data" >
+                    <div class="card-body align-content-center">
+                        <h5 class="card-title">新文化运动</h5>
+                        <p class="card-text">
+                            1915年9月，陈独秀在上海创办《青年杂志》，后改名《新青年》，新文化运动由此发端。这次运动有力地打击和动摇了长期以来封建正统思想的统治地位，唤醒了一代青年，使中国的知识分子尤其是广大青年受到一次西方民主和科学思想的洗礼，从而打开了遏制新思想涌流的闸门，在中国社会上掀起一股生气勃勃的思想解放的潮流。这就为适合中国需要的新思潮，特别是马克思主义在中国的传播，创造了有利的条件。
+                        </p>
+                        <a href="https://baike.baidu.com/item/%E6%96%B0%E6%96%87%E5%8C%96%E8%BF%90%E5%8A%A8/527309" class="btn btn-outline-light">MORE</a>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-mouse">
+                </a>
+            </div>
+            <div class="swiper-slide" data-time="1917">
+                <div class="card data" >
+                    <div class="card-body align-content-center">
+                        <h5 class="card-title">护法运动</h5>
+                        <p class="card-text">
+                            1917年7月，皖系军阀段祺瑞控制北京政府，拒绝恢复中华民国国会和临时约法。孙中山在广州发动护法运动。8月，南下议员在广州召开国会非常会议。会议通过《中华民国军政府组织大纲》，决定成立中华民国军政府，选举孙中山为军政府海陆军大元帅。
+                        </p>
+                        <a href="https://baike.baidu.com/item/%E6%8A%A4%E6%B3%95%E8%BF%90%E5%8A%A8?fromModule=lemma_search-box" class="btn btn-outline-light">MORE</a>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-mouse">
+                </a>
+            </div>
+            <div class="swiper-slide" data-time="1919">
+                <div class="card data" >
+                    <div class="card-body align-content-center">
+                        <h5 class="card-title">五四运动</h5>
+                        <p class="card-text">
+                            五四运动，是1919年5月4日发生在北京的一场以青年学生为主，广大群众、市民、工商人士等阶层共同参与的，通过示威游行、请愿、罢工、暴力对抗政府等多种形式进行的爱国运动，是中国人民彻底的反对帝国主义、封建主义的爱国运动，又称“五四风雷”。
+                        </p>
+                        <a href="https://baike.baidu.com/item/%E4%BA%94%E5%9B%9B%E8%BF%90%E5%8A%A8/291670" class="btn btn-outline-light">MORE</a>
+                    </div>
+                </div>
+                <a class="prompt text-decoration-none iconfont icon-up">
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+</main>
+<script src="js/main.min.js"></script>
+<script src="js/accordion.min.js"></script>
+<script src="js/Loaders.min.js"></script>
+</body>
+</html>

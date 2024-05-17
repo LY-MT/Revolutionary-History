@@ -1,0 +1,200 @@
+/*
+ *
+ * ███╗░░██╗██╗░█████╗░░█████╗░
+ * ████╗░██║██║██╔══██╗██╔══██╗
+ * ██╔██╗██║██║██║░░╚═╝███████║
+ * ██║╚████║██║██║░░██╗██╔══██║
+ * ██║░╚███║██║╚█████╔╝██║░░██║
+ * ╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚═╝
+ *
+ * Copyright (c) 2024. NiCa All rights reserved.
+ * @license GPLv3 for open source use only
+ * NiCa: https://www.liutao.love
+ * ────────█████─────────────█████
+ * ────████████████───────████████████
+ * ──████▓▓▓▓▓▓▓▓▓▓██───███▓▓▓▓▓▓▓▓▓████
+ * ─███▓▓▓▓▓▓▓▓▓▓▓▓▓██─██▓▓▓▓▓▓▓▓▓▓▓▓▓███
+ * ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███
+ * ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+ * ██▓▓▓▓▓▓▓▓▓──────────────────▓▓▓▓▓▓▓▓██
+ * ██▓▓▓▓▓▓▓─██───████─█──█─█████─▓▓▓▓▓▓██
+ * ██▓▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+ * ███▓▓▓▓▓▓─██───█──█─█──█─█████─▓▓▓▓▓▓██
+ * ███▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+ * ─███▓▓▓▓▓─████─████─████─█████─▓▓▓▓███
+ * ───███▓▓▓▓▓──────────────────▓▓▓▓▓▓███
+ * ────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+ * ─────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+ * ───────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████
+ * ──────────████▓▓▓▓▓▓▓▓▓▓▓▓████
+ * ─────────────███▓▓▓▓▓▓▓████
+ * ───────────────███▓▓▓███
+ * ─────────────────██▓██
+ * ──────────────────███
+ */
+
+.timeline{
+    width: 100%;
+    height: 100%;
+}
+.timeline .swiper-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.timeline .swiper-slide::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.2);
+}
+.timeline .swiper-slide:nth-child(1){
+    background-image: url("../images/honetwo-1.jpg");
+}
+.timeline .swiper-slide:nth-child(2){
+    background-image: url("../images/honetwo-2.jpg");
+}
+.timeline .swiper-slide:nth-child(3){
+    background-image: url("../images/honetwo-3.jpg");
+}
+.timeline .swiper-slide:nth-child(4){
+    background-image: url("../images/honetwo-4.jpg");
+}
+.timeline .swiper-slide:nth-child(5){
+    background-image: url("../images/honetwo-5.jpg");
+}
+.revolution .card.data{
+    background: rgba(0, 0, 0, .65);
+    color: #fff;
+    box-shadow: inset  10px 0 5px 0 rgb(0, 0, 0);
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 10;
+    .card-title{
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .card-title::before{
+        position: absolute;
+        content: '';
+        width: 20%;
+        bottom: -30px;
+        border: #c3150e solid 1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card-text{
+        text-indent:32px;
+    }
+    .btn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 90%);
+        --bs-btn-border-radius: 1.1rem
+    }
+}
+.revolution .card.data::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: -5px;
+    height: 5px;
+    border-radius: 0 0 50% 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*时间轴容器*/
+.timeline .swiper-pagination{
+    overflow: visible;
+    left: 5%!important;
+    transform: translateY(-45%)!important;
+}
+/*时间轴竖线*/
+.timeline .swiper-pagination::after{
+    position: absolute;
+    top: -45px;
+    width: 5px;
+    height: 0;
+    content: '';
+    display: block;
+    left: 5px;
+    background-color: #b81a1b;
+    z-index: -1;
+    border-radius: 1.5px;
+    animation: play 2s linear 2.5s forwards;
+}
+@keyframes play{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+/*时间轴竖线⚪*/
+.timeline .swiper-pagination::before{
+    position: absolute;
+    top: -45px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    left: -2.5px;
+    background-color: #b81a1b;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+
+}
+/*时间轴数字*/
+.timeline .swiper-pagination-bullet {
+    left: 25px;
+    height: auto!important;
+    text-align: left!important;
+    width: 120px!important;
+    display: block!important;
+    font-size: 50px!important;
+    color: #fff!important;
+    z-index: 1!important;
+    background: none!important;
+}
+/*时间轴后错位*/
+.timeline .swiper-pagination-bullet::after{
+    bottom: 0;
+    position: absolute;
+    width: 95%;
+    height: 38px;
+    padding: 7px;
+    text-align: right;
+    font-size: 15px;
+    content: '年';
+    display: block;
+    left: 30px;
+    background-color: #b81a1b;
+    z-index: -1;
+}
+/*时间轴前图标*/
+.timeline .swiper-pagination-bullet::before{
+    top: 55%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: '';
+    display: block;
+    left: -25px;
+    background-color: #b81a1b;
+    z-index: -1;
+    border: #fff 3px solid;
+    border-radius: 50%;
+}

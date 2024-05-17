@@ -1,0 +1,217 @@
+<!--
+  ~
+  ~ ███╗░░██╗██╗░█████╗░░█████╗░
+  ~ ████╗░██║██║██╔══██╗██╔══██╗
+  ~ ██╔██╗██║██║██║░░╚═╝███████║
+  ~ ██║╚████║██║██║░░██╗██╔══██║
+  ~ ██║░╚███║██║╚█████╔╝██║░░██║
+  ~ ╚═╝░░╚══╝╚═╝░╚════╝░╚═╝░░╚═╝
+  ~
+  ~ Copyright (c) 2024. NiCa All rights reserved.
+  ~ @license GPLv3 for open source use only
+  ~ NiCa: https://www.liutao.love
+  ~ ────────█████─────────────█████
+  ~ ────████████████───────████████████
+  ~ ──████▓▓▓▓▓▓▓▓▓▓██───███▓▓▓▓▓▓▓▓▓████
+  ~ ─███▓▓▓▓▓▓▓▓▓▓▓▓▓██─██▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███
+  ~ ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓▓▓──────────────────▓▓▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───████─█──█─█████─▓▓▓▓▓▓██
+  ~ ██▓▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─█████─▓▓▓▓▓▓██
+  ~ ███▓▓▓▓▓▓─██───█──█─█──█─██────▓▓▓▓▓▓██
+  ~ ─███▓▓▓▓▓─████─████─████─█████─▓▓▓▓███
+  ~ ───███▓▓▓▓▓──────────────────▓▓▓▓▓▓███
+  ~ ────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ───────████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█████
+  ~ ──────────████▓▓▓▓▓▓▓▓▓▓▓▓████
+  ~ ─────────────███▓▓▓▓▓▓▓████
+  ~ ───────────────███▓▓▓███
+  ~ ─────────────────██▓██
+  ~ ──────────────────███
+  -->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>红色精神</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--动画-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--时间轴样式-->
+    <link rel="stylesheet" href="css/timeline.css">
+    <!--手风琴-->
+    <link rel="stylesheet" href="css/accordion.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!--阿里矢量库-->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!--自定样式-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div id="loaded" class="loaded"></div>
+<!--菜单栏-->
+<nav class="navbar bg-transparent fixed-top">
+    <div class="container-fluid">
+        <!-- iconfont icon-menu text-white fs-2"-->
+        <div class="bg-transparent border-0 ms-auto " type="button"
+             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onclick="$('.menu-button').addClass('cross')">
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+                <div type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <div class="menu-button">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            革命历史
+                        </h2>
+                        <p class="content">
+                            Revolutionary history
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="index.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色记忆
+                        </h2>
+                        <p class="content">
+                            Red Memory
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="revolution.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            红色精神
+                        </h2>
+                        <p class="content">
+                            Red Spirit
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-spirit.html"></a>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="col-title">
+                            战争事迹
+                        </h2>
+                        <p class="content">
+                            War deeds
+                        </p>
+                        <a class="btn iconfont icon-right-btn" href="red-print.html"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="red-spirit">
+    <div class="container">
+        <p class="title iu">
+            <img src="images/you.png"/>
+            <span>红色</span>精神
+            <img src="images/zuo.png"/>
+        </p>
+        <div class="row">
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/dangzhang.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">建党精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-2.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">五四精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-3.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">八一精神</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-4.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">长征精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-5.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">雷锋精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-6.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">抗战精神</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-7.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">抗美援朝精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-8.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">红船精神</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-bg-dark">
+                    <img src="images/bg-6.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">抗战精神</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/main.min.js"></script>
+<script src="js/accordion.min.js"></script>
+<script src="js/Loaders.min.js"></script>
+</body>
+</html>
