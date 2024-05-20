@@ -10,6 +10,9 @@
 [Demo](https://ly-mt.github.io/Revolutionary-History/)
 
 
-![demo-1](https://raw.githubusercontent.com/LY-MT/Revolutionary-History/main/images/demo-1.jpg)
-![demo-2](https://raw.githubusercontent.com/LY-MT/Revolutionary-History/main/images/demo-2.jpg)
-![demo-3](https://raw.githubusercontent.com/LY-MT/Revolutionary-History/main/images/demo-3.jpg)
+>首页
+![demo-1](https://ly-mt.github.io/Revolutionary-History/images/demo-1.jpg)
+>时间轴
+![demo-2](https://ly-mt.github.io/Revolutionary-History/images/demo-2.jpg)
+>菜单栏
+![demo-3](https://ly-mt.github.io/Revolutionary-History/images/demo-3.jpg)
